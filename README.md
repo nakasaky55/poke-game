@@ -1,5 +1,7 @@
 # CoderSchool FTW - * React Intro *
 
+View online at: [My site on netlify](https://zealous-gates-b6bb46.netlify.com/)
+
 ## Available Scripts
 
 In the project directory, you can run:
