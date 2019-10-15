@@ -1,22 +1,155 @@
 .App {
   text-align: center;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
+.black {
+  border: 1px solid black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.custom-card {
+  min-height: 400px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  border-radius: 8px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 10px;
+  justify-content: space-around;
+  border: 3px solid black;
+}
+
+.custom-card img {
+  width: 200px;
+  height: 200px;
+}
+
+.win-card {
+  border: 5px solid #36ff36;
+}
+
+.lose-card {
+  border: 5px solid rgb(255, 7, 7);
+}
+
+.center-item {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.center-item li {
+  margin: 0 10px;
+}
+
+.custom-footer {
+  min-height: 150px;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  min-height: 150px;
+  font-size: 25px;
+}
+
+nav {
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+nav a {
+  color: white;
+}
+
+nav a:hover {
+  color: white;
+}
+
+ul.center-item {
+  padding: 0;
+}
+
+.custom-button img {
+  width: 64px;
+  height: 64px;
+}
+
+.button-section {
+  display: flex;
+  justify-content: center;
+}
+
+.button-section button {
+  margin: 10px 20px;
+  border: 1px solid #3f3c3c52;
+  padding: 10px 30px;
+}
+
+.history-board {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  font-family: "VT323", monospace;
+  font-size: 32px;
+  border: 1px dotted black;
+  border-top: none;
+  padding-top: 10px;
+}
+
+.history-board ul {
+  list-style: none;
+  padding: 0;
+}
+
+#history-logo {
+  width: 64px;
+  height: 64px;
+}
+
+#logo-img {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.startbutton {
+  justify-content: center;
+  font-family: "VT323", monospace;
+}
+
+.startbutton button {
+  padding: 20px 40px;
+  font-size: 32px;
+  background-color: #fab30f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.custom-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 100px;
+
+}
+
+.wall-section {
+  height: 100vh;
+  background-image: url('./component/charmander.svg');
+  background-size: cover;
+}
+
+.custom-row {
+  background-color: #000000db;
+  color: white;
+}
+
+.custom-btn {
+  border:1px solid white;
+  border-radius: 3px;
+  color: white
 }

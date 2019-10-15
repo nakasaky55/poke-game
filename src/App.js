@@ -1,24 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Main from "./component/main"
+import Login from"./component/Login"
 
+//Main event
 function App() {
+const [loginned, setLogin] = useState(false);
+const [loginEmail, setLoginEmail] = useState(null);
+console.log(loginEmail)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {!loginned && <Login onChangeForm={setLoginEmail}  onChangeLogin={setLogin}/>}
+      {loginned && <Main  onChangeLogin={setLogin} playName={loginEmail}/>}
     </div>
   );
 }
